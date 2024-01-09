@@ -1,6 +1,6 @@
 const createInt8TypedArray = (length, position, value) => {
   const buffer = new ArrayBuffer(length);
-  const intallArray = new IntallArray(buffer);
+  const int8Array = new Int8Array(buffer)
   if (position > intallArray.length) throw new Error('Position outside range');
   intallArray[position] = value;
   return new DataView(buffer);
